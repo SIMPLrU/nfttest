@@ -1,38 +1,80 @@
-.App {
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(31, 65, 31); */
+}
+
+.header {
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  font-size: 25px;
+  /* background-color: rgb(169, 85, 190); */
+}
+
+.button {
+  border: none;
+  border-radius: 50px;
+  padding: 4px 9px;
+  cursor: pointer;
+  /* background-color: rgb(119, 116, 116); */
+}
+
+.artIcon {
+  width: 80px;
+  height: 50px;
+  margin: 5px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.nftImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.nftText {
   text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: clamp(250px, 50vw, 400px);
+  height: 250px;
+  padding: 4px, 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.cardImage {
+  width: 50px;
+  height: 50px;
+  margin: 0px 5px 5px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter {
+  position: absolute;
+  top:  15px;
+  right: -8px;
+  font-size: 12px;
+
 }
